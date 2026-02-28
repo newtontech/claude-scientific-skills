@@ -1,103 +1,81 @@
 # Community Skills
 
-This directory contains community-contributed skills for the Claude Scientific Skills ecosystem.
+本目录包含来自 OpenClaw 社区的通用 Skills 贡献。
 
-## Overview
+## 来源
 
-These skills are general-purpose and can be used by anyone to enhance their AI assistant's capabilities. They cover a wide range of domains including development tools, academic research, automation, content creation, and more.
+这些 Skills 来自 [OpenClaw Workspace](https://github.com/openclaw/workspace) 的 Skills 生态系统，经过筛选后贡献给 claude-scientific-skills 仓库，供更广泛的 Claude 社区使用。
 
-## Skills Categories
+## Skills 分类
 
-### 🛠️ Development Tools
-| Skill | Description |
-|-------|-------------|
-| **coding-agent** | Delegate coding tasks to AI agents (Codex, Claude Code, etc.) |
-| **docker-essentials** | Essential Docker commands and workflows |
-| **github** | GitHub CLI operations, PR automation, and issue management |
-| **ralph-loop** | Generate Ralph Wiggum/AI agent loops for planning and building |
-| **mcp-builder** | Build and manage MCP (Model Context Protocol) servers |
-| **mcporter** | Configure and call MCP servers/tools |
-| **webapp-testing** | Web application testing with Playwright |
+### 🛠️ 开发工具 (7)
+| Skill | 描述 |
+|-------|------|
+| `coding-agent` | 代码代理工具，支持 Codex、Claude Code 等 AI 编程助手 |
+| `docker-essentials` | Docker 容器管理基础命令和工作流 |
+| `ralph-loop` | AI 代理循环工作流，支持自动化代码生成 |
+| `mcp-builder` | MCP (Model Context Protocol) 服务器构建指南 |
+| `mcporter` | MCP 服务器管理和调用工具 |
+| `webapp-testing` | Web 应用测试工具，基于 Playwright |
+| `acp-orchestrator` | ACP (Agent Control Protocol) 工作流编排器 |
 
-### 📚 Academic & Research
-| Skill | Description |
-|-------|-------------|
-| **google-scholar** | Search and retrieve papers from Google Scholar |
-| **semanticscholar** | Semantic Scholar API integration |
-| **context7** | Query documentation from Context7 (500,000+ libraries) |
-| **academic-writing** | Academic paper writing assistance |
-| **moltsci** | Publish and discover AI-native scientific papers |
+### 📚 学术工具 (5)
+| Skill | 描述 |
+|-------|------|
+| `google-scholar` | Google Scholar 学术文献搜索 |
+| `semanticscholar` | Semantic Scholar 论文搜索和引用分析 |
+| `context7` | Context7 文档检索和代码示例 |
+| `moltsci` | MoltSci 科学论文发布和发现平台 |
+| `academic-writing` | 学术论文写作辅助工具 |
 
-### ⏰ Automation
-| Skill | Description |
-|-------|-------------|
-| **cron-automation** | Cron jobs management and monitoring |
-| **get-tldr** | Quick article summarization via get-tldr.com API |
-| **browse** | Browser automation with Playwright/Selenium |
-| **x-api** | X (Twitter) API for real-time search and monitoring |
+### 🤖 自动化 (5)
+| Skill | 描述 |
+|-------|------|
+| `cron-automation` | Cron 任务自动化管理 |
+| `github` | GitHub 自动化工作流 |
+| `browse` | 浏览器自动化和数据抓取 |
+| `get-tldr` | 文章摘要生成工具 |
+| `x-api` | X (Twitter) API 实时搜索和监控 |
 
-### 🎓 Learning & Education
-| Skill | Description |
-|-------|-------------|
-| **video-learning** | Unified video learning system (Bilibili/YouTube) |
-| **bilibili-video-analyzer** | Analyze Bilibili videos and extract knowledge |
-| **youtube-video-analyzer** | Analyze YouTube videos and extract knowledge |
-| **self-learning-loop** | Self-learning iteration system with skill extraction |
+### 🎓 学习工具 (4)
+| Skill | 描述 |
+|-------|------|
+| `video-learning` | 视频学习系统，整合多平台视频分析 |
+| `bilibili-video-analyzer` | Bilibili 视频内容分析和知识提取 |
+| `youtube-video-analyzer` | YouTube 视频内容分析和字幕提取 |
+| `self-learning-loop` | 自我学习迭代系统 |
 
-### 📄 Document Processing
-| Skill | Description |
-|-------|-------------|
-| **docx** | Microsoft Word document processing |
-| **pdf** | PDF processing and manipulation |
-| **nano-pdf** | Natural language PDF editing |
-| **pptx** | Microsoft PowerPoint processing |
-| **xlsx** | Microsoft Excel processing |
+### 📝 内容工具 (5)
+| Skill | 描述 |
+|-------|------|
+| `docx` | Word 文档创建和编辑 |
+| `pdf` | PDF 操作工具包 |
+| `nano-pdf` | PDF 自然语言编辑工具 |
+| `pptx` | PowerPoint 演示文稿创建和编辑 |
+| `xlsx` | Excel 电子表格操作和分析 |
 
-### 🔍 Search & Information
-| Skill | Description |
-|-------|-------------|
-| **tavily-search** | Tavily AI-optimized web search |
-| **weather** | Weather information retrieval |
+### 🔧 基础工具 (4)
+| Skill | 描述 |
+|-------|------|
+| `skill-creator` | Skill 创建指南和最佳实践 |
+| `skills-system` | OpenClaw Skills 体系维护 |
+| `weather` | 天气查询和预报 |
+| `tavily-search` | Tavily AI 优化搜索 |
 
-### 📖 Meta Skills
-| Skill | Description |
-|-------|-------------|
-| **skill-creator** | Guidelines for creating new skills |
-| **skills-system** | Skills ecosystem maintenance guide |
+## 使用方式
 
-## Usage
+每个 Skill 目录包含 `SKILL.md` 文件，详细说明：
+- Skill 的功能和用途
+- 使用方法
+- 配置要求
+- 示例
 
-Each skill contains a `SKILL.md` file with:
-- **Overview**: What the skill does
-- **Installation**: Required dependencies
-- **Quick Start**: Basic usage examples
-- **Advanced Usage**: Complex scenarios
-- **Best Practices**: Recommendations
+在 Claude Code 中，Skill 会自动加载并提供相应的工具能力。
 
-To use a skill:
-1. Copy the skill directory to your skills folder
-2. Install any required dependencies
-3. Follow the examples in the SKILL.md
+## 贡献
 
-## Contributing
+欢迎向 [claude-scientific-skills](https://github.com/newtontech/claude-scientific-skills) 贡献更多通用 Skills！
 
-Want to contribute a new skill? Follow these guidelines:
+## 许可
 
-1. **General Purpose**: Skills should be useful to a broad audience, not just personal workflows
-2. **Well Documented**: Include clear examples and usage instructions
-3. **Tested**: Ensure the skill works as described
-4. **Categorized**: Place in the appropriate category
-
-See [skill-creator](skill-creator/SKILL.md) for detailed guidelines on creating skills.
-
-## License
-
-All community skills are provided under the same license as the main repository (MIT License unless otherwise specified).
-
-## Acknowledgments
-
-These skills were contributed by the OpenClaw community to enhance AI assistant capabilities for researchers, developers, and knowledge workers.
-
----
-
-*Last updated: 2026-02-28*
+这些 Skills 遵循与主仓库相同的许可证（MIT）。
